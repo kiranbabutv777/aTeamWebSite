@@ -1,9 +1,10 @@
+import smtplib
+import time
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-import time
-import smtplib
 
 browser = webdriver.Chrome()
 browser.get('https://www.ateamsoftsolutions.com')
